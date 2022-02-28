@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="/"><img id="logo-pic" src="logo.png" alt="logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li id="link1">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li id="link2">
+                <a href="contact-page.html">Contact Us</a>
+            </li>
+            <li id="link3">
+                <a href="about.html">About Us</a>
+            </li>
+        </ul>
+    </div>
+    <section>
+        <div class="container">
+            <img src="logo.png" alt="logo">
+            <div class="textbox">
+                <h2 class="title">Bellezza Bands</h2>
+                <p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut accusamus perspiciatis delectus illum eum cum ipsa quis eaque, neque vel dignissimos natus? Id, quaerat ipsam. Delectus aut dicta veniam! <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, ducimus fuga neque consequuntur ad cumque autem voluptatibus laboriosam, dolore veniam dolorum magni totam sint accusantium incidunt quae debitis impedit consequatur.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+:root {
+	--d: 700ms;
+	--e: cubic-bezier(0.19, 1, 0.22, 1);
+	--font-sans: 'Rubik', sans-serif;
+	--font-serif: 'Cardo', serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+	height: 100%;
+    overflow: hidden;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: 100%;
+    /* background: linear-gradient(180deg, transparent, rgba(1, 22, 31, 0.87)),
+    linear-gradient(0deg, transparent, rgba(1, 22, 31, 0.87)); */
+}
+.nav-bar{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+#logo-pic{
+    height: 120px;
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links a:active,
+.nav-links a:hover {
+    outline: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, #f1f2f9, #dff1ff); */
+}
+.container{
+    position: relative;
+    width: 90%;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 50px;
+    background-image: url(pic/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container img{
+    height: 100px;
+    position: absolute;
+    top: 10px;
+}
+.container h2{
+    position: absolute;
+    left: 70px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.container h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+}
+.container p{
+    position: relative;
+    max-width: 90%;
+    left: 70px;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+</style>
+</html>

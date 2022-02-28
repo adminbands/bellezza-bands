@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Bellezza Bands</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="/"><img id="logo-pic" src="logo.png" alt="logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li id="link1">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li id="link2">
+                <a href="contact-page.html">Contact Us</a>
+            </li>
+            <li id="link3">
+                <a href="about.html">About Us</a>
+            </li>
+        </ul>
+    </div>
+    <section>
+        <div class="box">
+            <div class="square" style="--i:0"></div>
+            <div class="square" style="--i:1"></div>
+            <div class="square" style="--i:2"></div>
+            <div class="square" style="--i:3"></div>
+            <div class="square" style="--i:4"></div>
+            <div class="container">
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+:root {
+	--d: 700ms;
+	--e: cubic-bezier(0.19, 1, 0.22, 1);
+	--font-sans: 'Rubik', sans-serif;
+	--font-serif: 'Cardo', serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+	height: 100%;
+    /* overflow: hidden; */
+}
+body {
+    background-image: url(background.jpg);
+    background-size: 100%;
+    /*background: linear-gradient(180deg, transparent, rgba(1, 22, 31, 0.87)),
+    linear-gradient(0deg, transparent, rgba(1, 22, 31, 0.87));*/
+    }
+.nav-bar{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+#logo-pic{
+    height: 120px;
+    color: #fff;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links a:active,
+.nav-links a:hover {
+    outline: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, #f1f2f9, #dff1ff); */
+}
+.box{
+    position: relative;
+}
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate{
+    0%,100%{transform: translateY(-40px);}
+    50%{transform: translateY(40px);}
+}
+    .box .square:nth-child(1) {
+        top: -50px;
+        right: -60px;
+        width: 100px;
+        height: 100px;
+        background-image: url(108.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .box .square:nth-child(2) {
+        top: 150px;
+        left: -100px;
+        width: 120px;
+        height: 120px;
+        z-index: 2;
+        background-image: url(118.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .box .square:nth-child(3) {
+        bottom: 50px;
+        right: -60px;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+        background-image: url(117.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .box .square:nth-child(4) {
+        bottom: -80px;
+        left: 100px;
+        width: 50px;
+        height: 50px;
+        background-image: url(101.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .box .square:nth-child(5) {
+        top: -80px;
+        left: 140px;
+        width: 60px;
+        height: 60px;
+        background-image: url(132.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        position: relative;
+        width: 800px;
+        min-height: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background-image: url(logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+</html>

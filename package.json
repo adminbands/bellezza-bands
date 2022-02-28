@@ -1,0 +1,22 @@
+{
+  "name": "bellezza-bands",
+  "version": "1.0.0",
+  "description": "just a small website",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adminbands/bellezza-bands.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adminbands/bellezza-bands/issues"
+  },
+  "homepage": "https://github.com/adminbands/bellezza-bands#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
