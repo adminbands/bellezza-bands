@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/adminbands/bellezza-bands#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "vue": "^3.2.31"
   }
 }
